@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheet.css/style.css" />
+    <title>UsBhaiUs</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="banner" id="banner"></div>
+    </header>
+    <div class="block">
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#banner">
+              <span class="icon">
+                <!-- <ion-icon name="person-outline"></ion-icon> -->
+                <ion-icon name="heart-half-outline"></ion-icon>
+              </span>
+              <span class="profile text">ME :)</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#picture-meme">
+              <span class="icon">
+                <ion-icon name="camera-outline"></ion-icon>
+              </span>
+              <span class="photo text">Memes</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <!-- <ion-icon name="videocam-outline"></ion-icon> -->
+                <ion-icon name="videocam-outline"></ion-icon>
+              </span>
+              <span class="message text">Memes</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#contact">
+              <span class="icon">
+                <!-- <ion-icon name="settings-outline"></ion-icon> -->
+                <ion-icon name="id-card-outline"></ion-icon>
+              </span>
+              <span class="setting text">Contact </span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <br /><br />
+    <div id="intro">
+      <p class="intro">
+        Hey buddy,<br />I'm <strong>Sumedh</strong> (A normal guy who Loves to
+        Read Books:) you might know me.... So this is first website that i have
+        made and hosted and am really proud of Myself. This just a start i had
+        so many plans about my future projects and i more thing
+        <strong>I love Coding</strong>. This website is all about meme's and
+        funn videos so enjoy that and have fun (Plz..don't get offended by any
+        of that memes).
+        <br />
+        Have a Nice day/evening/night <strong>:)</strong>
+      </p>
+    </div>
+    <div id="picture-meme">
+      <img
+        src="https://static.langimg.com/thumb/msid-76242348,width-680,resizemode-3/hilarious-memes.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://images.indianexpress.com/2019/11/dora.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://1.bp.blogspot.com/-h_hTmJgLG5U/XuydlXt9dnI/AAAAAAAADQM/xYd1xU_S1rgZZtsn8rTfVbXH5TUF2JjhACLcBGAsYHQ/s1600/Latest%2BFunny%2BTrending%2B%2BMemes%2Bin%2BHind%2BBest%2Bof%2B2020%2BMemes%2BStatuspictures.com%2B1%2B%25282%2529.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://png2png.com/wp-content/uploads/2021/08/memes.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://greatbollywood.com/wp-content/uploads/2019/09/funny-memes-in-hindi-latest1.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://st1.latestly.com/wp-content/uploads/2021/08/cat-380x214.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://i.ytimg.com/vi/f_hVuuPK97Y/maxresdefault.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://www.unigreet.com/wp-content/uploads/2019/10/Latest-Hindi-memes-844x1024.jpg"
+        alt=""
+        class="meme-pic"
+      />
+      <img
+        src="https://www.ohyaaro.com/wp-content/uploads/2021/04/Funny-memes.png"
+        alt=""
+        class="meme-pic"
+      />
+    </div>
+
+    <footer id="contact">
+      <div class="footer_text">
+        <p ><strong class="greetings">Hope u have a good day/evening/night</strong></p>
+        <p>
+          <strong class="note">*Note:</strong>Most of the Memes that are used here i hve no
+          rights on them i have taken those memes from [Google/reddit] and from
+          many more websites. Sunn be chomu copyright mtt dena
+        </p>
+      </div>
+
+      <div class="contact_us">
+        <strong class="follow">Follow me !</strong>
+        <div class="logo">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/i__sumedh__i/" target="blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/sumedhwature21?t=TQKgcjxFQQbUlk1FfkkdmA&s=09 " target="blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      const list = document.querySelectorAll(".list");
+      function activelink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activelink));
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https: //unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

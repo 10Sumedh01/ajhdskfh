@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --clr: #222327;
+  }
+
+  body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: var(--clr);
+  }
+.block{
+  display: block;
+  margin: auto;
+}
+  .navigation {
+
+    position: sticky;
+    /* top: 30px; */
+    width: 100%;
+    height: 70px;
+    background: #00d8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    margin-top: 10px;
+    /* own   */
+    /* position: fixed ; */
+    /* padding-top: 20px; */
+
+  }
+
+  .navigation ul {
+    display: flex;
+    width: 350px;
+  }
+
+  .navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+
+  .navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+  }
+
+  .navigation ul li.active a .icon {
+    transform: translateY(-32px);
+  }
+
+  /* i dont know why the hell except class text other class giving the error */
+  .navigation ul li a .text,
+  .profile,
+  .message,
+  .photo,
+  .setting {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 500;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .navigation ul li.active a .text,
+  :hover.profile,
+  :hover.message,
+  :hover.photo,
+  :hover.setting {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  .indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    /* background: #29fd53; */
+    background-color: #4cf76e;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+  }
+
+  .indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 00 var(--clr);
+  }
+
+  .indicator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 00 var(--clr);
+  }
+
+  
+  .navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(70px * 0));
+  }
+  .navigation ul li:nth-child(2).active~.indicator {
+      transform: translateX(calc(70px * 1));
+    }
+    
+  .navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(70px * 2));
+  }
+
+  .navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(70px * 3));
+  }
+
+  .navigation ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(70px * 4));
+  }
+
+  .banner {
+    background-image: url(../background\ img/Untitled.png);
+    /* height:20vw; */
+    min-height: 120px;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    background-attachment: fixed;
+    
+    
+  }
+  #intro{
+    display: block;
+    margin: auto;
+    width: 80%;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* margin-top: 400px; */
+      /* margin-top: 50px;
+      margin-right: 200px;
+      margin-left: 200px; */
+      /* font-family: monospace; */
+  }
+  .intro{
+      color: aliceblue;
+      /* text-indent: 30px; */
+      margin-bottom: 200px;
+  }
+  strong{
+      font-size: larger;
+      letter-spacing: 1px;
+      font-family: monospace;
+  }
+  .meme-pic{
+    width: 415px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    margin-bottom: 70px;
+    
+  }
+  /* @media  screen and (max-width: 800px) {
+     .navigation{
+
+     }
+    
+  }
+   */
+   footer{
+     /* background-color: #00f3ff7a; */
+     /* background-color: #68bbea; */
+     background-color: #35b1f7;
+     padding: 50px;
+     align-content: center;
+     align-items: center;
+   }
+   .footer_text{
+     color: aliceblue;
+     text-align: center;
+     font-size: 0.99rem;
+     margin-bottom: 40px;
+   }
+   .note{
+     /* Increase this as per requirement */
+     padding-bottom: 0px;
+     border-bottom-style: solid;
+     border-bottom-width: 3.1px;
+     width: fit-content;
+   }
+   .greetings{
+    padding-bottom: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+   }
+   .follow{
+     text-align: center;
+     display: block;
+     margin: auto;
+     color: #254b6c;
+     font-size: 1.55rem;
+   }
+   div .logo ul{
+     color: white;
+     list-style: none;
+     display: flex;
+     padding: 10px;
+     font-size: 1.9rem;
+     justify-content: center;
+     /* text-decoration: none; */
+   }
+   div .logo ul li{
+     padding: 20px;
+     /* padding: 10px; */
+   }
+   div .logo ul li a{
+     text-decoration: none;
+     color: aliceblue;
+   }
